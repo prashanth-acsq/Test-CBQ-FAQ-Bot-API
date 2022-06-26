@@ -2,6 +2,10 @@
 
 <br>
 
+- Deployed on heroku at https://pcs-acsq-test-cbq-faq-bot.herokuapp.com
+
+<br>
+
 - Endpoints
     1. `/`
     2. `/wakeup`
