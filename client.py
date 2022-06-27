@@ -43,7 +43,7 @@ def handler_2(kb_key: str, response) -> None:
 
 def main():
 
-    args: str ="--root-url"    
+    args: str = "--root-url"    
     root_url:str = "http://127.0.0.1:10000"
 
     if args in sys.argv: root_url = sys.argv[sys.argv.index(args) + 1]
