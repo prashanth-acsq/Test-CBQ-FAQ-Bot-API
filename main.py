@@ -38,20 +38,27 @@ app.add_middleware(
 )
 
 
-
 @app.get("/")
 async def root():
-    return "Root Path for Bot API", 
+    return {
+        "statusCode" : 200,
+        "statusText" : "Root Endpoint for ChatBot API",
+    }
 
 
 @app.get("/wakeup")
 async def root():
-    return "Awake", 
+    return {
+        "statusCode" : 200,
+        "statusText" : "API Wakeup Successful",
+    } 
 
 
 @app.get("/chatbot-version")
 async def chatbot_version():
     return {
+        "statusCode" : 200,
+        "statusText" : "Chatbot Version Fetch Successful",
         "version" : VERSION,
     }
 
