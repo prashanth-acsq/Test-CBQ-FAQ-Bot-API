@@ -72,7 +72,8 @@ def main():
                 if int(choice_2) >= len(response.json()["questions"]):
                     print("\n --- INVALID INPUT ---")
                 else:
-                    print(f"\n{response.json()['answers'][int(choice_2)-1]}")
+                    print(f"\n --- {response.json()['questions'][int(choice_2)-1].upper()} --- \n")
+                    print(f"{response.json()['answers'][int(choice_2)-1]}")
         
         elif choice_1 == "2": 
             response = requests.request(method="GET", url=f"{root_url}/mobile-banking")
